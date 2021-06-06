@@ -39,6 +39,13 @@ import {
  * 2) Languages
  * 3) Tools
  */
+/**
+ * Things to do:
+ * 1. all the skill card must of of same size
+ * 2. add padding within card and margin between
+ * 3.all the section of card should start at the same place
+ * 4. all the section of the page should have same margin difference from each other
+ */
 const Skills = () => {
   return (
     <SkillsContainer>

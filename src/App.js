@@ -3,15 +3,9 @@ import Nav from "./Nav";
 import Intro from "./Intro";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import ContactMe from "./ContactMe";
+import Footer from "./Footer";
 
-/**
- *
- * Things to do:
- * 1. work on skills - to add icons and content
- * 2. Projects: work on making images and icons more good
- * 3.content for intro and header
- * 4. Link the nav to particular doc section
- */
 const App = () => {
   return (
     <>
@@ -19,6 +13,8 @@ const App = () => {
       <Intro />
       <Skills />
       <Projects />
+      <ContactMe />
+      <Footer />
     </>
   );
 };

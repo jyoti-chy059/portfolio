@@ -10,17 +10,24 @@ import {
   SubHeader,
 } from "./styledComponents";
 import avatar from "../Images/avatar-girl.png";
+
 const Intro = () => {
   return (
     <IntroContainer>
-      <Title>{"Designer, Front-end Developer & Mentor"}</Title>
-      <SubTitle>{"I design and code beautifully things, with love."}</SubTitle>
+      <Title>{"Web Application Developer"}</Title>
+      <SubTitle>
+        {`I believe in using technolgy to solve problems that makes world a better place and future more exciting.`}
+      </SubTitle>
       <Avatar>
         <AvatarImage src={avatar} alt={"avatar"} />
       </Avatar>
       <MainContent>
         <Header>{"Hi, I’m Jyoti. Nice to meet you."}</Header>
-        <SubHeader>{`Since beginning my journey as a developer nearly 5 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.`}</SubHeader>
+        <SubHeader>
+          {`Since i started working in software developemnt, I have worked with different companies Like Accenture, \
+          Wipro, Equinix and others to build web applications that provides different services to their client or customer.\
+           I have mostly worked on front-end side of the applications creating great designs, smooth user experience and responsive app.`}
+        </SubHeader>
       </MainContent>
     </IntroContainer>
   );

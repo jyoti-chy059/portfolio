@@ -1,10 +1,14 @@
 import React from "react";
 import SecurityRisk from "../Images/securityRisk.png";
-import ReactIcon from "../Images/react-logo-name.png";
+import ReactIcon from "../Images/react-png.png";
 import GoLogo from "../Images/go-logo.svg";
-import PostgresqlLogo from "../Images/postgresql.png";
+import JavaIcon from "../Images/java-logo-icon.svg";
+
+import PostgresqlLogo from "../Images/postgre-sql-logo.png"; //postgresql.png";
 import AlightLogo from "../Images/alight.jpg";
 import EquinixLogo from "../Images/equinix-dashboard.png";
+import MySql from "../Images/mysql_icon.svg";
+import AngularIcon from "../Images/angular-logo-icon.svg";
 import {
   ProjectContainer,
   Header,
@@ -15,7 +19,16 @@ import {
   Image,
   TechStackContainer,
   TechImageContainer,
+  TechName,
 } from "./styledComponents";
+
+/**
+ * Things to do:
+ * 1.all the project card should be of same height and width
+ * 2. all card should have same distabce from left and right margin.
+ * 3. fix the tech stack images
+ *
+ */
 const Projects = () => {
   return (
     <ProjectContainer>
@@ -50,15 +63,16 @@ const Projects = () => {
             <TechStackContainer>
               <TechImageContainer>
                 <Image src={ReactIcon} />
+                <TechName>{"React JS"}</TechName>
               </TechImageContainer>
               <TechImageContainer>
-                <Image src={GoLogo} />
+                <Image src={JavaIcon} />
+                <TechName>{"Java"}</TechName>
               </TechImageContainer>
-              {/* <TechImageContainer>
-                <Image src={DockerLogo} />
-              </TechImageContainer> */}
+
               <TechImageContainer>
-                <Image src={PostgresqlLogo} />
+                <Image src={MySql} />
+                <TechName>{"MySQL"}</TechName>
               </TechImageContainer>
             </TechStackContainer>
           </Description>
@@ -93,15 +107,16 @@ const Projects = () => {
             <TechStackContainer>
               <TechImageContainer>
                 <Image src={ReactIcon} />
+                <TechName>{"React"}</TechName>
               </TechImageContainer>
               <TechImageContainer>
                 <Image src={GoLogo} />
+                <TechName>{"Golang"}</TechName>
               </TechImageContainer>
-              {/* <TechImageContainer>
-                <Image src={DockerLogo} />
-              </TechImageContainer> */}
+
               <TechImageContainer>
                 <Image src={PostgresqlLogo} />
+                <TechName>{"Postgresql"}</TechName>
               </TechImageContainer>
             </TechStackContainer>
           </Description>
@@ -140,16 +155,16 @@ const Projects = () => {
             <h4>Tech Stack:</h4>
             <TechStackContainer>
               <TechImageContainer>
-                <Image src={ReactIcon} />
+                <Image src={AngularIcon} />
+                <TechName>{"Angular"}</TechName>
               </TechImageContainer>
               <TechImageContainer>
-                <Image src={GoLogo} />
+                <Image src={JavaIcon} />
+                <TechName>{"Java"}</TechName>
               </TechImageContainer>
-              {/* <TechImageContainer>
-                <Image src={DockerLogo} />
-              </TechImageContainer> */}
               <TechImageContainer>
-                <Image src={PostgresqlLogo} />
+                <Image src={MySql} />
+                <TechName>{"MySQL"}</TechName>
               </TechImageContainer>
             </TechStackContainer>
           </Description>

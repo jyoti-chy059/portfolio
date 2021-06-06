@@ -18,7 +18,7 @@ export const ProjectCardContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
+  /* height: 50rem; */
 `;
 
 export const Project = styled.div`
@@ -26,9 +26,9 @@ export const Project = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
   width: inherit;
   box-shadow: 0px 20px 40px 0px rgb(75 90 126 / 14%);
+  padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
@@ -43,9 +43,10 @@ export const Description = styled.div`
 
 export const ProjectImageContainer = styled.div`
   flex: 1;
-  width: 20rem;
+  /* width: 20rem;
   height: 20rem;
-  margin-right: 8px;
+  margin-right: 8px; */
+  margin: 1rem;
 `;
 export const Image = styled.img`
   width: 100%;
@@ -63,4 +64,9 @@ export const TechImageContainer = styled.div`
   width: 8rem;
   height: 3rem;
   padding: 6px;
+  display: flex;
+  flex-direction: column;
+`;
+export const TechName = styled.span`
+  align-self: center;
 `;
