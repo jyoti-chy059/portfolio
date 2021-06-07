@@ -1,4 +1,6 @@
-/* body {
+import styled from "styled-components";
+
+export const MainContainer = styled.div`
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -9,9 +11,4 @@
   height: 100%;
   padding-left: 4rem;
   padding-right: 4rem;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
+`;

@@ -9,16 +9,17 @@ export const ProjectContainer = styled.div`
 `;
 
 export const Header = styled.h2`
-  width: 10rem;
+  width: 11rem;
 `;
 
 export const ProjectCardContainer = styled.div`
-  width: 60rem;
+  width: ${props => (props.isTabletOrMobile ? "30rem" : "60rem")};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* height: 50rem; */
+  margin-bottom: ${props => props.isTabletOrMobile && "2rem"};
 `;
 
 export const Project = styled.div`

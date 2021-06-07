@@ -44,6 +44,6 @@ export const Header = styled.div`
 export const SubHeader = styled.div`
   margin-top: 1rem;
   padding-left: 2rem;
-  width: 60rem;
+  width: ${props => props.isDesktopOrLaptop && "60rem"};
   font-size: 1rem;
 `;

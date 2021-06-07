@@ -31,26 +31,14 @@ import {
   Language,
   Icon,
   Description,
+  SubHeader,
 } from "./styledComponents";
-/**
- *
- * section in content:
- * 1) description
- * 2) Languages
- * 3) Tools
- */
-/**
- * Things to do:
- * 1. all the skill card must of of same size
- * 2. add padding within card and margin between
- * 3.all the section of card should start at the same place
- * 4. all the section of the page should have same margin difference from each other
- */
-const Skills = () => {
+
+const Skills = ({ isTabletOrMobile }) => {
   return (
     <SkillsContainer>
-      <CardContainer>
-        <Card>
+      <CardContainer isTabletOrMobile={isTabletOrMobile}>
+        <Card isTabletOrMobile={isTabletOrMobile}>
           <Header>
             <IconConatiner>
               <HeaderIcon src={frontendIcon} alt="Frontend" />
@@ -63,7 +51,7 @@ const Skills = () => {
                 "From the beginning of my career, I have always had keen interest in design.  I have always believed a product with great design makes it stand out. That is where my expertiese lies, having keen eye for design that is best for user experience perspective."
               }
             </Description>
-            <h4>{"Languages I speak:"}</h4>
+            <SubHeader>{"Languages I speak:"}</SubHeader>
             <LanguageConatiner>
               <Language>
                 <Icon src={HtmlIcon} />
@@ -86,7 +74,7 @@ const Skills = () => {
             </LanguageConatiner>
           </ContentContainer>
         </Card>
-        <Card>
+        <Card isTabletOrMobile={isTabletOrMobile}>
           <Header>
             <IconConatiner>
               <HeaderIcon src={backendIcon} alt="Frontend" />
@@ -99,7 +87,7 @@ const Skills = () => {
                 "I have tried my hand at backend development from time to time whenever i got opportunity. I may explore this field of software developement given a chance but right now i am a very beginner in this."
               }
             </Description>
-            <h4>{"Languages I have spoken:"}</h4>
+            <SubHeader>{"Languages I have spoken:"}</SubHeader>
             <LanguageConatiner>
               <Language>
                 <Icon src={JavaIcon} />
@@ -110,7 +98,7 @@ const Skills = () => {
             </LanguageConatiner>
           </ContentContainer>
         </Card>
-        <Card>
+        <Card isTabletOrMobile={isTabletOrMobile}>
           <Header>
             <IconConatiner>
               <HeaderIcon src={ToolTcon} alt="Frontend" />
@@ -124,7 +112,7 @@ const Skills = () => {
               }
             </Description>
 
-            <h4>{"Tools i have used:"}</h4>
+            <SubHeader>{"Tools i have used:"}</SubHeader>
 
             <LanguageConatiner>
               <Language>

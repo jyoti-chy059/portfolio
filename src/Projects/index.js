@@ -22,18 +22,11 @@ import {
   TechName,
 } from "./styledComponents";
 
-/**
- * Things to do:
- * 1.all the project card should be of same height and width
- * 2. all card should have same distabce from left and right margin.
- * 3. fix the tech stack images
- *
- */
-const Projects = () => {
+const Projects = ({ isTabletOrMobile }) => {
   return (
     <ProjectContainer>
       <Header>{"Recent projects"}</Header>
-      <ProjectCardContainer>
+      <ProjectCardContainer isTabletOrMobile={isTabletOrMobile}>
         <Project>
           <Description>
             <p>
@@ -82,7 +75,7 @@ const Projects = () => {
         </Project>
       </ProjectCardContainer>
 
-      <ProjectCardContainer>
+      <ProjectCardContainer isTabletOrMobile={isTabletOrMobile}>
         <Project>
           <Description>
             <p>
@@ -127,7 +120,7 @@ const Projects = () => {
         </Project>
       </ProjectCardContainer>
 
-      <ProjectCardContainer>
+      <ProjectCardContainer isTabletOrMobile={isTabletOrMobile}>
         <Project>
           <Description>
             <p>

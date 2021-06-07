@@ -10,8 +10,8 @@ export const SkillsContainer = styled.div`
 export const CardContainer = styled.div`
   /* background-color: orange; */
   display: flex;
-  flex-direction: row;
-  width: 70rem;
+  flex-direction: ${props => (props.isTabletOrMobile ? "column" : "row")};
+  width: ${props => (props.isTabletOrMobile ? "25rem" : "70rem")};
 `;
 
 export const Card = styled.div`
@@ -22,6 +22,7 @@ export const Card = styled.div`
   border-radius: 1rem;
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0px rgb(75 90 126 / 14%);
+  margin-bottom: ${props => props.isTabletOrMobile && "2rem"};
 `;
 export const Header = styled.div`
   display: flex;
@@ -46,11 +47,15 @@ export const HeaderIcon = styled.img`
   height: 100%;
   width: 100%;
 `;
-export const HeaderContent = styled.h2`
+export const HeaderContent = styled.h3`
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-family: "eurostile", sans-serif;
+  /* font-family: "eurostile", sans-serif; */
   color: #141c3a;
+  font-weight: 500;
+`;
+export const SubHeader = styled.h4`
+  font-weight: 500;
 `;
 export const LanguageConatiner = styled.div`
   display: flex;
