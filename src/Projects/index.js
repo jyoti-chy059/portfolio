@@ -22,11 +22,11 @@ import {
   TechName,
 } from "./styledComponents";
 
-const Projects = ({ isTabletOrMobile }) => {
+const Projects = () => {
   return (
     <ProjectContainer>
       <Header>{"Recent projects"}</Header>
-      <ProjectCardContainer isTabletOrMobile={isTabletOrMobile}>
+      <ProjectCardContainer>
         <Project>
           <Description>
             <p>
@@ -75,7 +75,7 @@ const Projects = ({ isTabletOrMobile }) => {
         </Project>
       </ProjectCardContainer>
 
-      <ProjectCardContainer isTabletOrMobile={isTabletOrMobile}>
+      <ProjectCardContainer>
         <Project>
           <Description>
             <p>
@@ -120,7 +120,7 @@ const Projects = ({ isTabletOrMobile }) => {
         </Project>
       </ProjectCardContainer>
 
-      <ProjectCardContainer isTabletOrMobile={isTabletOrMobile}>
+      <ProjectCardContainer>
         <Project>
           <Description>
             <p>

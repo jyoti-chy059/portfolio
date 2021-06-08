@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../constant";
 
 export const IntroContainer = styled.div`
   display: flex;
@@ -44,6 +45,9 @@ export const Header = styled.div`
 export const SubHeader = styled.div`
   margin-top: 1rem;
   padding-left: 2rem;
-  width: ${props => props.isDesktopOrLaptop && "60rem"};
   font-size: 1rem;
+
+  @media ${device.laptopL} {
+    width: 60rem;
+  }
 `;

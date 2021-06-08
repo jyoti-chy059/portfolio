@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../constant";
 
 export const ProjectContainer = styled.div`
   display: flex;
@@ -13,13 +14,21 @@ export const Header = styled.h2`
 `;
 
 export const ProjectCardContainer = styled.div`
-  width: ${props => (props.isTabletOrMobile ? "30rem" : "60rem")};
+  width: 16rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 50rem; */
-  margin-bottom: ${props => props.isTabletOrMobile && "2rem"};
+  margin-bottom: 2rem;
+
+  @media ${device.tablet} {
+    width: 30rem;
+  }
+
+  @media ${device.laptopL} {
+    width: 60rem;
+    margin-bottom: 0;
+  }
 `;
 
 export const Project = styled.div`
@@ -43,11 +52,13 @@ export const Description = styled.div`
 `;
 
 export const ProjectImageContainer = styled.div`
-  flex: 1;
-  /* width: 20rem;
-  height: 20rem;
-  margin-right: 8px; */
-  margin: 1rem;
+  display: none;
+
+  @media ${device.laptopL} {
+    display: flex;
+    flex: 1;
+    margin: 1rem;
+  }
 `;
 export const Image = styled.img`
   width: 100%;
@@ -58,15 +69,19 @@ export const Image = styled.img`
 export const TechStackContainer = styled.div`
   display: flex;
   flex-direction: row;
-  /* border: 1px solid black; */
 `;
 
 export const TechImageContainer = styled.div`
-  width: 8rem;
-  height: 3rem;
+  width: 4rem;
+  height: 2rem;
   padding: 6px;
   display: flex;
   flex-direction: column;
+
+  @media ${device.tablet} {
+    width: 8rem;
+    height: 3rem;
+  }
 `;
 export const TechName = styled.span`
   align-self: center;

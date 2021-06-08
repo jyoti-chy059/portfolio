@@ -34,11 +34,11 @@ import {
   SubHeader,
 } from "./styledComponents";
 
-const Skills = ({ isTabletOrMobile }) => {
+const Skills = () => {
   return (
     <SkillsContainer>
-      <CardContainer isTabletOrMobile={isTabletOrMobile}>
-        <Card isTabletOrMobile={isTabletOrMobile}>
+      <CardContainer>
+        <Card>
           <Header>
             <IconConatiner>
               <HeaderIcon src={frontendIcon} alt="Frontend" />
@@ -74,7 +74,7 @@ const Skills = ({ isTabletOrMobile }) => {
             </LanguageConatiner>
           </ContentContainer>
         </Card>
-        <Card isTabletOrMobile={isTabletOrMobile}>
+        <Card>
           <Header>
             <IconConatiner>
               <HeaderIcon src={backendIcon} alt="Frontend" />
@@ -98,7 +98,7 @@ const Skills = ({ isTabletOrMobile }) => {
             </LanguageConatiner>
           </ContentContainer>
         </Card>
-        <Card isTabletOrMobile={isTabletOrMobile}>
+        <Card>
           <Header>
             <IconConatiner>
               <HeaderIcon src={ToolTcon} alt="Frontend" />
